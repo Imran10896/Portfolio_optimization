@@ -1,4 +1,3 @@
-# Import necessary libraries
 import cpnet
 
 def coreness_Rombach(G):
@@ -16,6 +15,17 @@ def coreness_Rombach(G):
         - Directed: No
         - Multiple groups of core-periphery pairs: No
         - Continuous core-periphery structure: Yes
+        
+    Algorithm Details:
+        The coreness of nodes in the network is calculated based on Rombach's algorithm. 
+        The algorithm aims to identify the core-periphery structure in networks 
+        and provides continuous coreness values for each node.
+
+    Reference:
+        P. Rombach, M. A. Porter, J. H. Fowler, and P. J. Mucha. Core-Periphery Structure 
+        in Networks (Revisited). SIAM Review, 59(3):619–646, 2017.
+
+    Algorithm Parameters:
         - algorithm (str): Optimization algorithm. Choose between 'ls' (label switching) 
                            and 'sa' (simulated annealing). Defaults to 'ls'.
 
