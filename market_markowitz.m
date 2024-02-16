@@ -20,7 +20,7 @@
 %   for investing in the entire market, and then calculates financial ratios based on cumulative returns.
 %
 %   Example:
-%   [Market_mean, Market_std, Market_shrp, B] = market_markowitz(num_windows, Data_2014);
+%   [Market_mean, Market_std, Market_shrp, B] = market_markowitz(num_windows, Data);
 
 function [Market_mean, Market_std, Market_shrp, B] = market_markowitz(num_windows, Data)
     
