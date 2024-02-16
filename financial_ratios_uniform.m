@@ -4,7 +4,9 @@ function [port_mean, port_std, port_shrp, B] = financial_ratios_uniform(Method, 
 %   based on portfolio returns obtained from uniformly weighted portfolios.
 %
 %   Input Arguments:
-%   - Method: Matrix indicating the method used for each asset in each window.
+%   - Input Arguments:
+%   - Method: Matrix indicating the method used for each asset in each window. The order of the matrix is total_stocks x total_windows,
+%     where each column represents a window starting from the most peripheral stocks.
 %   - Portfolio_Size: Number of assets in the portfolio.
 %   - num_windows: Number of windows.
 %   - Data: Matrix containing data for all assets.
