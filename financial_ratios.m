@@ -54,7 +54,7 @@ function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfoli
 
             % Extract data for each asset in the portfolio for the next time window
             for j = 1:Portfolio_Size
-                b1 = Data((i+125) : (249 + i), Method(j, i)); % one-day splitting window
+                b1 = Data((i+125) : (249 + i), Method(j, i)); 
                 T2 = [T2, b1];
             end
             
