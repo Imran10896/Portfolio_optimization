@@ -1,8 +1,5 @@
 function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfolio_Size, num_windows, Data)
-% FINANCIAL_RATIOS Calculates financial ratios based on portfolio returns.
-%
-%   [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfolio_Size, num_windows, Data_2014)
-%
+
 %   This function calculates financial ratios such as mean, standard deviation, and Sharpe ratio 
 %   based on portfolio returns obtained from the given data.
 %
