@@ -42,13 +42,6 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 2. `coreness_Rombach.py`: Computes coreness centrality using the method proposed by Rombach et al.
 3. `cp_centralization.py`: Computes centralization of a network using the core-periphery model.
 
-### MATLAB Functions
-
-1. `financial_ratios`: Calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on Markowitz weighted portfolio returns.
-2. `financial_ratios_uniform`: Calculates financial ratios based on uniformly weighted portfolio returns.
-3. `market_uniform`: Calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
-4. `market_markowitz`: Calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
-5. `core_fin_ratios`: Calculates financial ratios for portfolio construction through core stocks.
 
 ### Python Scripts
 
