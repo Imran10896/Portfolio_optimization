@@ -1,9 +1,17 @@
-% centrinds - Calculates centrality indices as used in the paper by Pozzi et al.
-% INPUT
-% G: Planar Maximally Filtered Graph stored as a symmetric N-by-N sparse matrix (correlation matrix).
+% CENTRINDS - Calculates centrality indices as used in the paper by Pozzi et al.
+% 
+%   Calculates centrality indices as described in the paper:
+%   F. Pozzi, T. Di Matteo, T. Aste, “Spread of risk across financial markets: better to invest in the peripheries”.
+
+%   INPUT:
+%   G: Planar Maximally Filtered Graph stored as a symmetric N-by-N sparse matrix (correlation matrix).
 %
-% OUTPUT
-% X, Y, XpY, XmY: Centrality indices as described in the paper.
+%   OUTPUT:
+%   X, Y, XpY, XmY: Centrality indices as described in the paper.
+%
+%   Reference:
+%   Pozzi, F., Di Matteo, T., & Aste, T. (2013). Spread of risk across financial markets: better to invest in the peripheries. Scientific Reports, 3(1665), 1-6.
+%
 
 function [X, Y, XpY, XmY] = centrinds(G)
     % Step 1: Preprocess the graph
