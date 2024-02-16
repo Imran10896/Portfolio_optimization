@@ -42,9 +42,39 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 2. `coreness_Rombach.py`: Computes coreness centrality using the method proposed by Rombach et al.
 3. `cp_centralization.py`: Computes centralization of a network using the core-periphery model.
 
+### MATLAB Functions
+
+1. `financial_ratios`: Calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
+2. `financial_ratios_uniform`: Calculates financial ratios based on uniformly weighted portfolio returns.
+3. `market_uniform`: Calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
+4. `market_markowitz`: Calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
+5. `core_fin_ratios`: Calculates financial ratios for portfolio construction through core stocks.
+
+### Python Scripts
+
+1. `coreness_Rossa.py`: Computes coreness centrality using the method proposed by Rossa et al.
+2. `coreness_Rombach.py`: Computes coreness centrality using the method proposed by Rombach et al.
+3. `cp_centralization.py`: Computes centralization of a network using the core-periphery model.
+
+### MATLAB Functions
+
+1. `financial_ratios`: Calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
+2. `financial_ratios_uniform`: Calculates financial ratios based on uniformly weighted portfolio returns.
+3. `market_uniform`: Calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
+4. `market_markowitz`: Calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
+5. `core_fin_ratios`: Calculates financial ratios for portfolio construction through core stocks.
+
+### Python Scripts
+
+1. `coreness_Rossa.py`: Computes coreness centrality using the method proposed by Rossa et al.
+2. `coreness_Rombach.py`: Computes coreness centrality using the method proposed by Rombach et al.
+3. `cp_centralization.py`: Computes centralization of a network using the core-periphery model.
+
 ## References
 
-The functions and scripts in this toolkit are based on various financial theories and methodologies. For detailed explanations and references, please refer to the comments within each function's source code.
+1. Pozzi, F., Di Matteo, T., & Aste, T. (2013). Spread of risk across financial markets: better to invest in the peripheries. Scientific Reports, 3(1665), 1-6.
+2. Rombach, P., Porter, M. A., Fowler, J. H., & Mucha, P. J. (2017). Core-Periphery Structure in Networks (Revisited). SIAM Review, 59(3), 619–646.
+3. Rossa, F., Dercole, F., & Piccardi, C. (2013). Profiling core-periphery network structure by random walkers. Scientific Reports, 3(1467).
 
 
 
