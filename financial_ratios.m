@@ -1,5 +1,5 @@
-function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfolio_Size, num_windows, Data_2014)
-%FINANCIAL_RATIOS Calculates financial ratios based on portfolio returns.
+function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfolio_Size, num_windows, Data)
+% FINANCIAL_RATIOS Calculates financial ratios based on portfolio returns.
 %
 %   [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfolio_Size, num_windows, Data_2014)
 %
@@ -10,7 +10,7 @@ function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfoli
 %   - Method: Matrix indicating the method used for each asset in each window.
 %   - Portfolio_Size: Number of assets in the portfolio.
 %   - num_windows: Number of windows.
-%   - Data_2014: Matrix containing data for all assets.
+%   - Data: Matrix containing data for all assets.
 %
 %   Output Arguments:
 %   - port_mean: Mean of cumulative returns.
@@ -24,10 +24,10 @@ function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfoli
 %   based on cumulative returns.
 %
 %   Reference:
-%   [Provide any relevant references if applicable]
+%   [Cornuejols, G. and Reha Tütüncü. Optimization Methods in Finance. Cambridge University Press, 2007.]
 %
 %   Example:
-%   [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfolio_Size, num_windows, Data_2014);
+%   [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfolio_Size, num_windows, Data);
 
     B = [];
 
@@ -37,7 +37,7 @@ function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfoli
             T = [];
             % Extract data for each asset in the portfolio
             for j = 1:Portfolio_Size
-                a1 = Data_2014(i : (124 + i), Method(j, i)); % one-day splitting window
+                a1 = Data(i : (124 + i), Method(j, i)); % one-day splitting window
                 T = [T, a1];
             end
     
@@ -56,7 +56,7 @@ function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfoli
 
             % Extract data for each asset in the portfolio for the next time window
             for j = 1:Portfolio_Size
-                b1 = Data_2014((i+125) : (249 + i), Method(j, i)); % one-day splitting window
+                b1 = Data((i+125) : (249 + i), Method(j, i)); % one-day splitting window
                 T2 = [T2, b1];
             end
             
