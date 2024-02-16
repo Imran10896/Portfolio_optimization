@@ -58,8 +58,8 @@ function [port_mean, port_std, port_shrp, B] = financial_ratios(Method, Portfoli
                 T2 = [T2, b1];
             end
             
-            T2 = table2array(T2); % 240x5
-            a = T2 * w; % 240x1
+            T2 = table2array(T2);
+            a = T2 * w; 
             B = [B, a]; 
             
         catch
