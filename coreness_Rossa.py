@@ -1,4 +1,3 @@
-# Import necessary libraries
 import cpnet
 
 def coreness(G):
@@ -10,6 +9,10 @@ def coreness(G):
         
     Returns:
         dict: Dictionary mapping node IDs to coreness values.
+        
+    Reference:
+        F. Rossa, F. Dercole, and C. Piccardi. Profiling core-periphery network structure 
+        by random walkers. Scientific Reports, 3, 1467, 2013.
     """
     # Load the Rossa algorithm
     alg = cpnet.Rossa()
