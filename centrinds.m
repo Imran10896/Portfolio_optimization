@@ -4,8 +4,17 @@
 %   INPUT:
 %   G: Planar Maximally Filtered Graph stored as a symmetric N-by-N sparse matrix (correlation matrix).
 %
-%   OUTPUT:
-%   X, Y, XpY, XmY: Centrality indices as described in the paper.
+%   OUTPUT
+%   X, Y, XpY, and XmY represent centrality indices described as X, Y, (X + Y), and (X - Y) in the paper. 
+%   A vertex characterized by high (low) ranking in terms of (X + Y) is likely to be a central (peripheral) vertex, 
+%   while a vertex characterized by high (low) ranking in terms of (X - Y) is likely to possess many unimportant (few important) connections. 
+%   "High ranking" corresponds to "low score" (i.e., the most central vertex is assigned a small score).
+%
+%   In detail:
+%   - A small value of X indicates high connectedness, whereas a large value indicates low connectedness.
+%   - A small value of Y indicates low eccentricity, whereas a large value indicates high eccentricity.
+%   - A small value of XpY indicates high overall centrality, whereas a large value indicates low overall centrality.
+%   - A small value of XmY indicates many low-quality connections, whereas a large value indicates few high-quality connections.
 
 function [X, Y, XpY, XmY] = centrinds(G)
     % Step 1: Preprocess the graph
