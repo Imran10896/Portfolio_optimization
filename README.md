@@ -36,12 +36,6 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 4. `market_markowitz`: Calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
 5. `core_fin_ratios`: Calculates financial ratios for portfolio construction through core stocks.
 
-### Python Scripts
-
-1. `coreness_Rossa.py`: Computes coreness centrality using the method proposed by Rossa et al.
-2. `coreness_Rombach.py`: Computes coreness centrality using the method proposed by Rombach et al.
-3. `cp_centralization.py`: Computes centralization of a network using the core-periphery model.
-
 
 ### Python Scripts
 
@@ -57,11 +51,6 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 4. `market_markowitz`: Calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
 5. `core_fin_ratios`: Calculates financial ratios for portfolio construction through core stocks.
 
-### Python Scripts
-
-1. `coreness_Rossa.py`: Computes coreness centrality using the method proposed by Rossa et al.
-2. `coreness_Rombach.py`: Computes coreness centrality using the method proposed by Rombach et al.
-3. `cp_centralization.py`: Computes centralization of a network using the core-periphery model.
 
 ## References
 
