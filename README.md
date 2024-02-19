@@ -37,6 +37,10 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 3. `market_uniform`: It calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
 4. `market_markowitz`: It calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
 5. `core_fin_ratios`: It calculates financial ratios for portfolio construction through core stocks.
+6. `sort_out_mat` : The function iterates over each window, calculating the indices of the sorted matrix. 
+   For zero scores, the indices are sorted in descending order of Sharpe ratios, while non-zero scores are sorted normally. 
+   This structured representation of the sorted data facilitates further analysis and interpretation.
+
 
 
 ### Python Scripts
