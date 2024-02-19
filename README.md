@@ -31,7 +31,7 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 ### MATLAB Functions
 
 
-1. `centrinds`: It calculates peripherality of a node in a network proposed by the Pozzi et al[1].
+1. `centrinds`: It calculates hybrid measures of nodes in a network using Pozzi et al method[1].
 1. `financial_ratios`: It calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
 2. `financial_ratios_uniform`: It calculates financial ratios based on uniformly weighted portfolio returns.
 3. `market_uniform`: It calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
@@ -45,8 +45,8 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 
 ### Python Scripts
 
-1. `coreness_Rossa.py`: It computes coreness of a node in a network using Rossa model[3].
-2. `coreness_Rombach.py`: It computes coreness of a node in a network using Rombach model[2].
+1. `coreness_Rossa.py`: It computes coreness of nodes in a network using Rossa et al model[3].
+2. `coreness_Rombach.py`: It computes coreness of a nodes in a network using Rombach et al model[2].
 3. `cp_centralization.py`: It computes centralization of a network using the core-periphery model[3].
 
 
