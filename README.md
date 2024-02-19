@@ -30,18 +30,20 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 
 ### MATLAB Functions
 
-1. `financial_ratios`: Calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
-2. `financial_ratios_uniform`: Calculates financial ratios based on uniformly weighted portfolio returns.
-3. `market_uniform`: Calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
-4. `market_markowitz`: Calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
-5. `core_fin_ratios`: Calculates financial ratios for portfolio construction through core stocks.
+
+1. `centrinds`: It calculates peripherality of a node in a network proposed by the Pozzi et al[1].
+1. `financial_ratios`: It calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
+2. `financial_ratios_uniform`: It calculates financial ratios based on uniformly weighted portfolio returns.
+3. `market_uniform`: It calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
+4. `market_markowitz`: It calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
+5. `core_fin_ratios`: It calculates financial ratios for portfolio construction through core stocks.
 
 
 ### Python Scripts
 
-1. `coreness_Rossa.py`: Computes coreness centrality using the method proposed by Rossa et al.
-2. `coreness_Rombach.py`: Computes coreness centrality using the method proposed by Rombach et al.
-3. `cp_centralization.py`: Computes centralization of a network using the core-periphery model.
+1. `coreness_Rossa.py`: It computes coreness of a node in a network using Rossa model[3].
+2. `coreness_Rombach.py`: It computes coreness of a node in a network using Rombach model[2].
+3. `cp_centralization.py`: It computes centralization of a network using the core-periphery model[3].
 
 
 ## References
