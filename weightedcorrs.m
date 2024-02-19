@@ -1,15 +1,14 @@
-function R = weightedcorrs(Y)
+function R = weightedcorrs(Y, theta)
 % Calculates the Pearson Weighted Correlation coefficients matrix.
 %
-%   R = weightedcorrs(Y, w, theta)
+%   R = weightedcorrs(Y, theta)
 %
 %   This function computes the weighted correlation coefficients matrix based on the input data matrix Y
-%   and the vector of weights w.
+%   and the parameter for exponential weights, theta.
 %
 %   Input Arguments:
 %   - Y: Data matrix with dimensions (dt, N), where dt is the number of observations in the window and
 %        N is the number of variables.
-%   - w: Vector of weights with dimensions (1, N).
 %   - theta: Parameter for exponential weights.
 %
 %   Output Argument:
@@ -24,13 +23,12 @@ function R = weightedcorrs(Y)
 %
 %   Note:
 %   - The input data matrix Y should be properly formatted for the function to operate correctly.
-%   - The vector of weights w should have the same number of elements as the number of variables in Y.
 %
 %   Example:
 %   R = weightedcorrs(Y, theta);
 
-% Get the dimensions of the data matrix Y
-[dt, N] = size(Y);
+% Number of observations
+dt = size(Y, 1);  
 
 function w_exp = expweights(dt, theta)
     % Calculate constant w0
@@ -45,6 +43,9 @@ end
 
 % Call the expweights function
 w = expweights(dt, theta); 
+
+% Number of variables
+N = size(Y, 2);
 
 % Remove the weighted mean
 temp = Y - repmat(w' * Y, dt, 1);
