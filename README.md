@@ -32,13 +32,14 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 
 
 1. `hybrid_measure`: It calculates the peripherality of nodes in a network i.e.; The hybrid measure has a smaller value for the central vertices and a larger value for its peripheral vertices[1].
-2. `markowitz_model`:It Computes the maximum Sharpe ratio portfolio weights[4].
-3. `financial_ratios`: It calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
-4. `financial_ratios_uniform`: It calculates financial ratios based on uniformly weighted portfolio returns.
-5. `market_uniform`: It calculates financial ratios for "market portfolio" with uniformly weighted portfolio returns.
-6. `market_markowitz`:It calculates financial ratios for "market portfolio" using Markowitz portfolio optimization which maximize the Sharpe ratio.
-7. `core_fin_ratios`: It calculates financial ratios for portfolio construction through core stocks.
-8. `sort_out_mat` : The function iterates over each window, calculating the indices of the sorted matrix. 
+2. `weightedcorrs`: Calculates the Pearson Weighted Correlation coefficients matrix[5].
+3. `markowitz_model`:It Computes the maximum Sharpe ratio portfolio weights[4].
+4. `financial_ratios`: It calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
+5. `financial_ratios_uniform`: It calculates financial ratios based on uniformly weighted portfolio returns.
+6. `market_uniform`: It calculates financial ratios for "market portfolio" with uniformly weighted portfolio returns.
+7. `market_markowitz`:It calculates financial ratios for "market portfolio" using Markowitz portfolio optimization which maximize the Sharpe ratio.
+8. `core_fin_ratios`: It calculates financial ratios for portfolio construction through core stocks.
+9. `sort_out_mat` : The function iterates over each window, calculating the indices of the sorted matrix. 
    For zero scores, the indices are sorted in descending order of Sharpe ratios, while non-zero scores are sorted normally. 
    This structured representation of the sorted data facilitates further analysis and interpretation.
 
@@ -57,3 +58,4 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 2. Rombach, P., Porter, M. A., Fowler, J. H., & Mucha, P. J. (2017). Core-Periphery Structure in Networks (Revisited). SIAM Review, 59(3), 619–646.
 3. Rossa, F., Dercole, F., & Piccardi, C. (2013). Profiling core-periphery network structure by random walkers. Scientific Reports, 3(1467).
 4. Cornuejols G, Tütüncü R. Optimization methods in finance. Cambridge University Press; 2006 Dec 21.
+5. Pozzi F, Di Matteo T, Aste T. Exponential smoothing weighted correlations. The European Physical Journal B. 2012 Jun;85:1-21.
