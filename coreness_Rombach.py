@@ -1,6 +1,6 @@
 import cpnet
 
-def coreness_Rombach(G):
+def Rombach_model(G):
     """
     Calculates the coreness of nodes in a network using Rombach's algorithm.
     
