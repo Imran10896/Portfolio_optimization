@@ -34,8 +34,8 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 1. `hybrid_measure`: It calculates the peripherality of nodes in a network i.e.; The hybrid measure has a smaller value for the central vertices and a larger value for its peripheral vertices..
 2. `financial_ratios`: It calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
 3. `financial_ratios_uniform`: It calculates financial ratios based on uniformly weighted portfolio returns.
-4. `market_uniform`: It calculates financial ratios for investing in the whole market with uniformly weighted portfolio returns.
-5. `market_markowitz`: It calculates financial ratios for investing in the whole market using Markowitz portfolio optimization.
+4. `market_uniform`: It calculates financial ratios for "market portfolio" with uniformly weighted portfolio returns.
+5. `market_markowitz`:It calculates financial ratios for "market portfolio" using Markowitz portfolio optimization which maximize the Sharpe ratio.
 6. `core_fin_ratios`: It calculates financial ratios for portfolio construction through core stocks.
 7. `sort_out_mat` : The function iterates over each window, calculating the indices of the sorted matrix. 
    For zero scores, the indices are sorted in descending order of Sharpe ratios, while non-zero scores are sorted normally. 
