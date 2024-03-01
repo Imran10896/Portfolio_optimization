@@ -20,7 +20,11 @@ function R = weightedcorrs(Y, theta)
 %   3. Ensure the matrix is exactly symmetric.
 %   4. Calculate the variances and diagonalize them to obtain the standard deviations.
 %   5. Compute the matrix of weighted correlation coefficients.
-%
+
+%   Reference:
+%       Pozzi F, Di Matteo T, Aste T. Exponential smoothing weighted correlations. 
+%       The European Physical Journal B. 2012 Jun;85:1-21.    
+
 %   Note:
 %   - The input data matrix Y should be properly formatted for the function to operate correctly.
 %
