@@ -1,6 +1,6 @@
 # Financial Analysis and Network Analysis Toolkit
 
-This repository contains MATLAB and Python scripts for financial analysis, portfolio optimization, and network analysis. These scripts are designed to assist in analyzing financial data, constructing portfolios, calculating financial ratios, and analyzing network centrality.
+This repository contains MATLAB and Python scripts for financial analysis, portfolio optimization, and network analysis. These scripts are designed to assist in analyzing financial data, constructing portfolios, calculating financial ratios, and detecting core-periphery structure in network.
 
 ## Contents
 
@@ -12,7 +12,7 @@ This repository contains MATLAB and Python scripts for financial analysis, portf
 
 ## Introduction
 
-The Financial Analysis and Network Analysis Toolkit provides a comprehensive set of scripts for analyzing financial data and network structures. Whether you're interested in portfolio management, financial ratio calculation, or network centrality analysis, this toolkit has you covered.
+The Financial Analysis and Network Analysis Toolkit provides a comprehensive set of scripts for analyzing financial data and network structures. Whether you're interested in portfolio management, financial ratio calculation, or network's core-periphery structure, this toolkit has you covered.
 
 ## Installation
 
