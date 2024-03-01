@@ -31,7 +31,7 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 ### MATLAB Functions
 
 
-1. `hybrid_measure`: It calculates the peripherality of nodes in a network i.e.; The hybrid measure has a smaller value for the central vertices and a larger value for its peripheral vertices.
+1. `hybrid_measure`: It calculates the peripherality of nodes in a network i.e.; The hybrid measure has a smaller value for the central vertices and a larger value for its peripheral vertices[1].
 2. `markowitz_model`:It Computes the maximum Sharpe ratio portfolio weights
 3. `financial_ratios`: It calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
 4. `financial_ratios_uniform`: It calculates financial ratios based on uniformly weighted portfolio returns.
