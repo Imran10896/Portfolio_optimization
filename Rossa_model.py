@@ -1,6 +1,6 @@
 import cpnet
 
-def coreness(G):
+def Rossa_model(G):
     """
     Calculates the coreness of nodes in a network using the Rossa algorithm.
     
