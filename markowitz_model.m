@@ -4,6 +4,11 @@ function w = markowitz_model(T)
 %   weights using the input table T, where each column represents an asset.
 %   The function returns the optimal portfolio weights w.
 
+%   Reference:
+
+%   Cornuejols G, Tütüncü R. Optimization methods in finance. 
+%   Cambridge University Press; 2006 Dec 21.
+
     % Create a portfolio object
     symbols = T.Properties.VariableNames;
     p = Portfolio('AssetList', symbols, 'RiskFreeRate', 0/252);
