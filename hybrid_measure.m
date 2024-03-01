@@ -5,18 +5,12 @@
 %   G: Planar Maximally Filtered Graph stored as a symmetric N-by-N sparse matrix (correlation matrix).
 %
 %   OUTPUT
-%   X, Y, XpY, and XmY represent centrality indices described as X, Y, (X + Y), and (X - Y) in the paper. 
-%   A vertex characterized by high (low) ranking in terms of (X + Y) is likely to be a central (peripheral) vertex, 
-%   while a vertex characterized by high (low) ranking in terms of (X - Y) is likely to possess many unimportant (few important) connections. 
-%   "High ranking" corresponds to "low score" (i.e., the most central vertex is assigned a small score).
-%
-%   In detail:
-%   - A small value of X indicates high connectedness, whereas a large value indicates low connectedness.
-%   - A small value of Y indicates low eccentricity, whereas a large value indicates high eccentricity.
-%   - A small value of XpY indicates high overall centrality, whereas a large value indicates low overall centrality.
-%   - A small value of XmY indicates many low-quality connections, whereas a large value indicates few high-quality connections.
+%   
+%  - The value of P is small for the central vertices and large for its peripheral vertices in the network.
+%   
+%  
 
-function [X, Y, XpY, XmY] = centrinds(G)
+function P = hybrid_measure(G)
     % Step 1: Preprocess the graph
     PMFG_Top = (G ~= 0) * 1; % Topological planar
     PMFG_GeoW = G; % Geodesic planar - weights
@@ -72,6 +66,6 @@ function [X, Y, XpY, XmY] = centrinds(G)
     n = size(G, 1);
     X = (DgrGeoPMFG_rnks + DgrTopPMFG_rnks + BtwGeoPMFG_rnks + BtwTopPMFG_rnks - 4) / 4 / (n - 1);
     Y = (ExxGeoPMFG_rnks + ExxTopPMFG_rnks + ClsGeoPMFG_rnks + ClsTopPMFG_rnks + EigGeoPMFG_rnks + EigTopPMFG_rnks - 6) / 6 / (n - 1);
-    XpY = X + Y;
-    XmY = X - Y;
+    P = X + Y;
+    
 end
