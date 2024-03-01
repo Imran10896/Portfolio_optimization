@@ -46,8 +46,8 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 
 ### Python Scripts
 
-1. `coreness_Rossa.py`: It computes coreness of nodes in a network using Rossa et al model[3].
-2. `coreness_Rombach.py`: It computes coreness of nodes in a network using Rombach et al model[2].
+1. `Rossa_model.py`: It computes coreness of nodes in a network using Rossa et al model[3].
+2. `Rombach_model.py`: It computes coreness of nodes in a network using Rombach et al model[2].
 3. `cp_centralization.py`: It computes centralization of a network using the core-periphery model[3].
 
 
