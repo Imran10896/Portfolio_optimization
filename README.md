@@ -32,7 +32,7 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 
 
 1. `hybrid_measure`: It calculates the peripherality of nodes in a network i.e.; The hybrid measure has a smaller value for the central vertices and a larger value for its peripheral vertices[1].
-2. `markowitz_model`:It Computes the maximum Sharpe ratio portfolio weights
+2. `markowitz_model`:It Computes the maximum Sharpe ratio portfolio weights[4].
 3. `financial_ratios`: It calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
 4. `financial_ratios_uniform`: It calculates financial ratios based on uniformly weighted portfolio returns.
 5. `market_uniform`: It calculates financial ratios for "market portfolio" with uniformly weighted portfolio returns.
@@ -56,3 +56,4 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 1. Pozzi, F., Di Matteo, T., & Aste, T. (2013). Spread of risk across financial markets: better to invest in the peripheries. Scientific Reports, 3(1665), 1-6.
 2. Rombach, P., Porter, M. A., Fowler, J. H., & Mucha, P. J. (2017). Core-Periphery Structure in Networks (Revisited). SIAM Review, 59(3), 619–646.
 3. Rossa, F., Dercole, F., & Piccardi, C. (2013). Profiling core-periphery network structure by random walkers. Scientific Reports, 3(1467).
+4. Cornuejols G, Tütüncü R. Optimization methods in finance. Cambridge University Press; 2006 Dec 21.
