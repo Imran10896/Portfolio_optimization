@@ -1,16 +1,30 @@
-%   CENTRINDS -Calculates centrality indices as described in the paper:
-%   Pozzi, F., Di Matteo, T., & Aste, T. (2013). Spread of risk across financial markets: better to invest in the peripheries. Scientific Reports, 3(1665), 1-6.
-
-%   INPUT:
-%   G: Planar Maximally Filtered Graph stored as a symmetric N-by-N sparse matrix (correlation matrix).
-%
-%   OUTPUT
-%   
-%  - The value of P is small for the central vertices and large for its peripheral vertices in the network.
-%   
-%  
-
 function P = hybrid_measure(G)
+% HYBRID_MEASURE Calculates peripherality of a node in a network.
+%
+% Reference:
+% Pozzi, F., Di Matteo, T., & Aste, T. (2013). Spread of risk across financial markets: 
+% better to invest in the peripheries. Scientific Reports, 3(1665), 1-6.
+%
+% INPUT:
+% G: Planar Maximally Filtered Graph stored as a symmetric N-by-N sparse matrix (correlation matrix).
+%
+% OUTPUT:
+% P: Peripherality value. The value of P is small for the central vertices and large for its peripheral vertices in the network.
+%
+% Algorithm:
+% This function calculates peripherality of a node in a network based on the method described in the reference paper.
+%
+% Steps:
+% 1. Preprocess the graph.
+% 2. Calculate shortest paths.
+% 3. Calculate graph properties.
+% 4. Calculate eigenvector centrality.
+% 5. Calculate rankings and indices.
+% 6. Compute peripherality value P.
+%
+% Note:
+% The value of P is small for the central vertices and large for its peripheral vertices in the network.
+%   
     % Step 1: Preprocess the graph
     PMFG_Top = (G ~= 0) * 1; % Topological planar
     PMFG_GeoW = G; % Geodesic planar - weights
