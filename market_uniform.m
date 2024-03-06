@@ -1,5 +1,4 @@
 function [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data)
-
 % MARKET_UNIFORM - Calculates financial ratios for investing in the entire market.
 %
 %   [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data)
@@ -24,12 +23,13 @@ function [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows,
 %
 %   Example:
 %   [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data);
+
     B = [];   
 
     % Iterate over each window
     for i = 1:num_windows
         % Extract data for the current window (all stocks)
-        b1 = Data((i+125) : (249 + i), :);     % one-day spiliting window
+        b1 = Data((i+125) : (249 + i), :);     % one-day splitting window
         % Calculate mean of cumulative returns for the entire market
         a = mean(b1, 2); 
         B = [B a];
