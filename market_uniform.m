@@ -1,3 +1,5 @@
+function [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data)
+
 % MARKET_UNIFORM - Calculates financial ratios for investing in the entire market.
 %
 %   [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data)
@@ -22,8 +24,6 @@
 %
 %   Example:
 %   [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data);
-
-function [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data)
     B = [];   
 
     % Iterate over each window
