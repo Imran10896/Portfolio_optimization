@@ -24,7 +24,7 @@ function [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows,
 %   Example:
 %   [Market_mean, Market_std, Market_shrp, B] = market_uniform(num_windows, Data);
 
-    B = [];   
+B = [];   
 
     % Iterate over each window
     for i = 1:num_windows
