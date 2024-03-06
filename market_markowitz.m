@@ -1,3 +1,5 @@
+function [Market_mean, Market_std, Market_shrp, B] = market_markowitz(num_windows, Data)
+
 % MARKET_MARKOWITZ - Calculates financial ratios for investing in the entire market using Markowitz portfolio optimization.
 %
 %   [Market_mean, Market_std, Market_shrp, B] = market_markowitz(num_windows, Data)
@@ -21,8 +23,6 @@
 %
 %   Example:
 %   [Market_mean, Market_std, Market_shrp, B] = market_markowitz(num_windows, Data);
-
-function [Market_mean, Market_std, Market_shrp, B] = market_markowitz(num_windows, Data)
     
     B = [];
 
