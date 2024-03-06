@@ -1,3 +1,5 @@
+function [port_mean, port_std, port_shrp, B] = core_fin_ratios(Method, Portfolio_Size, num_windows, Data)
+
 % CORE_FIN_RATIOS - Calculates financial ratios for portfolio construction through core stocks.
 %
 %   [port_mean, port_std, port_shrp, B] = core_fin_ratios(Method, Portfolio_Size, num_windows, Data)
@@ -25,7 +27,7 @@
 %   Example:
 %   [port_mean, port_std, port_shrp, B] = core_fin_ratios(Method, Portfolio_Size, num_windows, Data);
 
-function [port_mean, port_std, port_shrp, B] = core_fin_ratios(Method, Portfolio_Size, num_windows, Data)
+
     % Get the total number of stocks
     total_stocks = size(Method, 1);
     B = [];
