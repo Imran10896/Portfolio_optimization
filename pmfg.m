@@ -3,11 +3,7 @@
 % PMFG = doPMFG(W) returns the planar maximally filtered graph (PMFG)   
 % PMFG is a sparse matrix with PMFG(i,j) = W(i,j) if the edge i-j is present
 % and PMFG(i,j) = 0 if not. W must be sparse, real, square, and symmetric.
-% This function uses "matlab_bgl" package from 
-% http://www.mathworks.com/matlabcentral/fileexchange/10922
-% and
-% http://www.stanford.edu/~Edgleich/programs/matlab_bgl/
-% which must be installed.
+% This function uses 'matlab_bgl' package.
 %--------------------------------------------------------------------------
 % Reference:
 %
