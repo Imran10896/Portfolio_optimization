@@ -82,9 +82,3 @@ while (E < 3 * (N - 2)) % continue while all edges for a maximal planar graph ar
         end
     end
 end
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% to plot, you can use 
-% drawPMFG2(PMFG) % 2D
-% or 
-% drawPMFG3(PMFG) % 3D
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
