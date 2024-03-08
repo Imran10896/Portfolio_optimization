@@ -31,21 +31,21 @@ You can use both MATLAB and Python scripts included in this toolkit. Follow the 
 ### MATLAB Functions
 
 1. **pmfg**: Calculates the PMFG subgraph from a matrix of weights [1].
-2. **hybrid_measure**: Calculates the peripherality of nodes in a network i.e., the hybrid measure has a smaller value for the central vertices and a larger value for its peripheral vertices [1].
-3. **weightedcorrs**: Calculates the Pearson Weighted Correlation coefficients matrix [5].
-4. **markowitz_model**: Computes the maximum Sharpe ratio portfolio weights [4].
-5. **financial_ratios**: Calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
-6. **financial_ratios_uniform**: Calculates financial ratios based on uniformly weighted portfolio returns.
-7. **market_uniform**: Calculates financial ratios for the "market portfolio" with uniformly weighted portfolio returns.
-8. **market_markowitz**: Calculates financial ratios for the "market portfolio" using Markowitz portfolio optimization which maximizes the Sharpe ratio.
-9. **core_fin_ratios**: Calculates financial ratios for portfolio construction through core stocks.
-10. **sort_out_mat**: This function iterates over each window, calculating the indices of the sorted matrix. For zero scores, the indices are sorted in descending order of Sharpe ratios, while non-zero scores are sorted normally. This structured representation of the sorted data facilitates further analysis and interpretation.
+2. **weightedcorrs**: Calculates the Pearson Weighted Correlation coefficients matrix [2].
+3. **hybrid_measure**: Calculates the peripherality of nodes in a network i.e., the hybrid measure has a smaller value for the central vertices and a larger value for its peripheral vertices [3].
+5. **markowitz_model**: Computes the maximum Sharpe ratio portfolio weights [4].
+6. **financial_ratios**: Calculates financial ratios such as mean, standard deviation, and Sharpe ratio based on portfolio returns.
+7. **financial_ratios_uniform**: Calculates financial ratios based on uniformly weighted portfolio returns.
+8. **market_uniform**: Calculates financial ratios for the "market portfolio" with uniformly weighted portfolio returns.
+9. **market_markowitz**: Calculates financial ratios for the "market portfolio" using Markowitz portfolio optimization which maximizes the Sharpe ratio.
+10. **core_fin_ratios**: Calculates financial ratios for portfolio construction through core stocks.
+11. **sort_out_mat**: This function iterates over each window, calculating the indices of the sorted matrix. For zero scores, the indices are sorted in descending order of Sharpe ratios, while non-zero scores are sorted normally. This structured representation of the sorted data facilitates further analysis and interpretation.
 
 ### Python Scripts
 
-1. **Rossa_model.py**: Computes the coreness of nodes in a network using the Rossa et al model [3].
-2. **Rombach_model.py**: Computes the coreness of nodes in a network using the Rombach et al model [2].
-3. **cp_centralization.py**: Computes the centralization of a network using the core-periphery model [3].
+1. **Rossa_model.py**: Computes the coreness of nodes in a network using the Rossa et al model [5].
+2. **Rombach_model.py**: Computes the coreness of nodes in a network using the Rombach et al model [6].
+3. **cp_centralization.py**: Computes the centralization of a network using the core-periphery model [5].
 
 ## References
 
