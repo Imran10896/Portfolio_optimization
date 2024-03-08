@@ -17,10 +17,9 @@ function P = hybrid_measure(G)
 % Steps:
 % 1. Preprocess the graph.
 % 2. Calculate shortest paths.
-% 3. Calculate graph properties.
-% 4. Calculate eigenvector centrality.
-% 5. Calculate rankings and indices.
-% 6. Compute peripherality value P.
+% 3. Compute the Degree (D), the Betweenness Centrality, the Eccentricity, the Closeness and the Eigenvector Centrality for both weighted and unweighted graphs
+% 4. Calculate rankings.
+% 5. Compute peripherality value P.
 %
 % Note:
 % The value of P is small for the central vertices and large for its peripheral vertices in the network.
@@ -46,7 +45,6 @@ function P = hybrid_measure(G)
     ClsTopPMFG = mean(ShPTop); % Closeness (based on Topological Shortest Paths)
     ClsGeoPMFG = mean(ShPGeo); % Closeness (based on Geometrical Shortest Paths)
     
-    % Step 4: Calculate eigenvector centrality
     [eigvec, eigval] = eigs(PMFG_Top);
     eigval = sum(eigval);
     index = find(eigval == max(max(eigval)));
@@ -65,7 +63,7 @@ function P = hybrid_measure(G)
         EigGeoPMFG = eigvec(:, index);
     end
     
-    % Step 5: Calculate rankings and indices
+    % Step 4: Calculate rankings
     DgrGeoPMFG_rnks = tiedrank(-DgrGeoPMFG)';
     DgrTopPMFG_rnks = tiedrank(-DgrTopPMFG)';
     BtwTopPMFG_rnks = tiedrank(-BtwTopPMFG)';
